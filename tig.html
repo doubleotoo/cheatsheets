@@ -9,7 +9,13 @@
   <h1>Tig</h1>
   <h2>Tig shortcuts</h2>
 
-<p>Invocation</p>
+<h3>Installing</h3>
+
+<pre><code>$ brew install tig --HEAD
+$ apt-get install tig
+</code></pre>
+
+<h3>Invocation</h3>
 
 <pre><code>tig blame FILE
 tig master        # Show a branch
@@ -18,32 +24,31 @@ tig FILE          # Show history of file
 tig v0.0.3:README # Show contents of file in a specific revision
 </code></pre>
 
-<h2>All views</h2>
+<h3>All views</h3>
 
-<ul>
-<li><code>^N</code> - Next on parent view</li>
-<li><code>^P</code> - Previous on parent view</li>
-</ul>
+<pre><code>^N    # Next on parent view
+^P    # Previous on parent view
+</code></pre>
 
-<p><code>m</code> - Main view
- * <code>D</code> - Toggle between date display modes
- * <code>A</code> - Toggle between author display modes
- * <code>C</code> - Cherry pick a commit</p>
+<h3><code>m</code> - Main view</h3>
 
-<p><code>S</code> - Stage view</p>
+<pre><code>D     # Toggle between date display modes
+A     # Toggle between author display modes
+C     # Cherry pick a commit
+</code></pre>
 
-<ul>
-<li><code>u</code> - Stage/unstage file or chunk</li>
-<li><code>!</code> - Revert file or chunk</li>
-<li><code>C</code> - Commit</li>
-<li><code>M</code> - Merge</li>
-</ul>
+<h3><code>S</code> - Stage view</h3>
 
-<p><code>H</code> - Branch view</p>
+<pre><code>u     # Stage/unstage file or chunk
+!     # Revert file or chunk
+C     # Commit
+M     # Merge
+</code></pre>
 
-<ul>
-<li><code>i</code> - Change sort header</li>
-</ul>
+<h3><code>H</code> - Branch view</h3>
+
+<pre><code>i     # Change sort header
+</code></pre>
 
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
