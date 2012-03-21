@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>RSpec</h1>
+  <h3>Invoking tests</h3>
+
+<pre><code>rake -T spec      # List spec tasks
+
+rake spec         # Run all
+
+rake spec/models/mymodel_spec.rb
+rake spec/models/mymodel_spec.rb:27
+</code></pre>
+
+<h3>Other spec tasks</h3>
+
+<pre><code>rake spec:controllers
+rake spec:helpers
+rake spec:lib
+rake spec:mailers
+rake spec:models
+rake spec:requests
+rake spec:routing
+rake spec:views
+</code></pre>
+
+<h3>Spec helpers</h3>
+
+<pre><code>module UserSpecHelper
+  def valid_user_attributes
+    { :email =&gt; &quot;joe@bloggs.com&quot;,
+      :username =&gt; &quot;joebloggs&quot;,
+      :password =&gt; &quot;abcdefg&quot;}
+  end
+end
+</code></pre>
+
+<h3>A test</h3>
+
+<pre><code>describe &quot;A User (in general)&quot; do
+  include UserSpecHelper
+
+  before(:each) do
+    @user = User.new
+  end
+
+  subject {
+    Person.new
+  }
+
+  context &quot;setter methods&quot; do
+    it &quot;should do this&quot; do
+      pending &quot;some other thing&quot;
+
+      subject.name = 'x'
+      subject.name.should == 'x'
+    end
+  end
+end
+</code></pre>
+
+<h3>Expectations</h3>
+
+<pre><code>target.should be &lt; 6
+target.should == 5
+target.should be_between(1, 10)
+target.should_not == 'Samantha'
+
+target.should be &lt;value&gt;
+target.should_not be &lt;value&gt;
+
+target.should satisfy {|arg| ...}
+target.should_not satisfy {|arg| ...}
+
+target.should equal &lt;value&gt;
+target.should not_equal &lt;value&gt;
+
+target.should be_close &lt;value&gt;, &lt;tolerance&gt;
+target.should_not be_close &lt;value&gt;, &lt;tolerance&gt;
+
+target.should predicate [optional args]
+target.should be_predicate [optional args]
+target.should_not predicate [optional args]
+target.should_not be_predicate [optional args]
+
+target.should match &lt;regex&gt;
+target.should_not match &lt;regex&gt;
+
+target.should be_an_instance_of &lt;class&gt;
+target.should_not be_an_instance_of &lt;class&gt;
+
+target.should be_a_kind_of &lt;class&gt;
+target.should_not be_a_kind_of &lt;class&gt;
+
+target.should respond_to &lt;symbol&gt;
+target.should_not respond_to &lt;symbol&gt;
+
+lambda {a_call}.should raise_error
+lambda {a_call}.should raise_error(&lt;exception&gt; [, message])
+lambda {a_call}.should_not raise_error
+lambda {a_call}.should_not raise_error(&lt;exception&gt; [, message])
+lambda {a_call}.should change(instance, method).from(number).to(number)
+
+proc.should throw &lt;symbol&gt;
+proc.should_not throw &lt;symbol&gt;
+
+target.should include &lt;object&gt;
+target.should_not include &lt;object&gt;
+
+target.should have(&lt;number&gt;).things
+target.should have_at_least(&lt;number&gt;).things
+target.should have_at_most(&lt;number&gt;).things
+
+target.should have(&lt;number&gt;).errors_on(:field)
+
+expect { thing.approve! }.to change(thing, :status).
+    from(Status::AWAITING_APPROVAL).
+    to(Status::APPROVED)
+
+expect { thing.destroy }.to change(Thing, :count).by(-1)
+</code></pre>
+
+<h3>Mocking a class</h3>
+
+<pre><code>user_mock = mock &quot;User&quot;
+user_mock.should_receive(:authenticate).with(&quot;password&quot;).and_return(true)
+user_mock.should_receive(:coffee).exactly(3).times.and_return(:americano)
+user_mock.should_receive(:coffee).exactly(5).times.and_raise(NotEnoughCoffeeExcep
+ion)
+
+people_stub = mock &quot;people&quot;
+people_stub.stub!(:each).and_yield(mock_user)
+people_stub.stub!(:bad_method).and_raise(RuntimeError)
+
+user_stub = mock_model(&quot;User&quot;, :id =&gt; 23, :username =&gt; &quot;pat&quot;, :email =&gt;
+&quot;pat@example.com&quot;)
+
+my_instance.stub!(:msg).and_return(value)
+MyClass.stub!(:msg).and_return(value)
+</code></pre>
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+  <script src="http://cachedcommons.org/cache/prettify/1.0.0/javascripts/prettify-min.js"></script>
+  <script>$("pre").addClass("prettyprint");</script>
+  <script>prettyPrint();</script>
+</body>
+</html>
