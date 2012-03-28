@@ -111,23 +111,46 @@ expect { thing.approve! }.to change(thing, :status).
 expect { thing.destroy }.to change(Thing, :count).by(-1)
 </code></pre>
 
-<h3>Mocking a class</h3>
+<h3>Mocking - basic</h3>
 
-<pre><code>user_mock = mock &quot;User&quot;
-user_mock.should_receive(:authenticate).with(&quot;password&quot;).and_return(true)
-user_mock.should_receive(:coffee).exactly(3).times.and_return(:americano)
-user_mock.should_receive(:coffee).exactly(5).times.and_raise(NotEnoughCoffeeExcep
-ion)
+<pre><code>book.stub(:title) { &quot;The RSpec Book&quot; }
+book.stub(:title =&gt; &quot;The RSpec Book&quot;)
+book.stub(:title).and_return(&quot;The RSpec Book&quot;)
 
-people_stub = mock &quot;people&quot;
-people_stub.stub!(:each).and_yield(mock_user)
-people_stub.stub!(:bad_method).and_raise(RuntimeError)
+# First arg is a name, it's optional
+book = double(&quot;book&quot;, :title =&gt; &quot;The RSpec Book&quot;)
+</code></pre>
 
-user_stub = mock_model(&quot;User&quot;, :id =&gt; 23, :username =&gt; &quot;pat&quot;, :email =&gt;
-&quot;pat@example.com&quot;)
+<h3>Mocking - consecutive return values</h3>
 
-my_instance.stub!(:msg).and_return(value)
-MyClass.stub!(:msg).and_return(value)
+<pre><code>die.stub(:roll).and_return(1,2,3)
+die.roll # =&gt; 1
+die.roll # =&gt; 2
+die.roll # =&gt; 3
+die.roll # =&gt; 3
+die.roll # =&gt; 3
+</code></pre>
+
+<h3>Expectations</h3>
+
+<pre><code>double.should_receive(:msg).with(no_args())
+double.should_receive(:msg).with(any_args())
+double.should_receive(:msg).with(1, kind_of(Numeric), &quot;b&quot;) #2nd argument can any kind of Numeric
+double.should_receive(:msg).with(1, boolean(), &quot;b&quot;) #2nd argument can true or false
+double.should_receive(:msg).with(1, /abc/, &quot;b&quot;) #2nd argument can be any String matching the submitted Regexp
+double.should_receive(:msg).with(1, anything(), &quot;b&quot;) #2nd argument can be anything at all
+double.should_receive(:msg).with(1, ducktype(:abs, :div), &quot;b&quot;) #2nd argument can be object that responds to #abs and #div
+
+double.should_receive(:msg).once
+double.should_receive(:msg).twice
+double.should_receive(:msg).exactly(n).times
+double.should_receive(:msg).at_least(:once)
+double.should_receive(:msg).at_least(:twice)
+double.should_receive(:msg).at_least(n).times
+double.should_receive(:msg).at_most(:once)
+double.should_receive(:msg).at_most(:twice)
+double.should_receive(:msg).at_most(n).times
+double.should_receive(:msg).any_number_of_times
 </code></pre>
 
 
