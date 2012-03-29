@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Ffaker</h1>
+  <h2>Faker::Address</h2>
+
+<p>``` ruby
+Faker::Address.city                     #=&gt; &quot;Autumnside&quot;
+                                        #=&gt; &quot;South Brielleberg&quot;
+                                        #=&gt; &quot;West Alvera&quot;</p>
+
+<p>Faker::Address.street_name              #=&gt; &quot;Greyson Rapid&quot;
+                                        #=&gt; &quot;Hoppe Grove&quot;
+                                        #=&gt; &quot;Reichert Lights&quot;</p>
+
+<p>Faker::Address.street_address           #=&gt; &quot;98786 Neal Motorway&quot;
+                                        #=&gt; &quot;6619 Yvonne Dale&quot;
+                                        #=&gt; &quot;6143 Bailey Plaza&quot;</p>
+
+<p>Faker::Address.secondary_address        #=&gt; &quot;Suite 560&quot;
+                                        #=&gt; &quot;Apt. 332&quot;
+                                        #=&gt; &quot;Apt. 411&quot;
+```</p>
+
+<h2>Faker::Company</h2>
+
+<p>``` ruby
+Faker::Company.name                     #=&gt; &quot;Pouros-Ondricka&quot;
+                                        #=&gt; &quot;Ward Group&quot;
+                                        #=&gt; &quot;Walter-Romaguera&quot;</p>
+
+<p>Faker::Company.suffix                   #=&gt; &quot;and Sons&quot;
+                                        #=&gt; &quot;LLC&quot;
+                                        #=&gt; &quot;and Sons&quot;</p>
+
+<p>Faker::Company.catch_phrase             #=&gt; &quot;Versatile mobile help-desk&quot;
+                                        #=&gt; &quot;Extended fresh-thinking utilisation&quot;
+                                        #=&gt; &quot;Reactive coherent flexibility&quot;</p>
+
+<p>Faker::Company.bs                       #=&gt; &quot;extend one-to-one convergence&quot;
+                                        #=&gt; &quot;architect 24/7 interfaces&quot;
+                                        #=&gt; &quot;revolutionize viral vortals&quot;</p>
+
+<p>Faker::Company.position                 #=&gt; &quot;General Corporate President&quot;
+                                        #=&gt; &quot;Executive Department Consultant&quot;
+                                        #=&gt; &quot;Associate Director&quot;
+```</p>
+
+<h2>Faker::Education</h2>
+
+<p>``` ruby
+Faker::Education.school                 #=&gt; &quot;Larkwood Institution&quot;
+                                        #=&gt; &quot;Whiteshire School&quot;
+                                        #=&gt; &quot;California International College&quot;</p>
+
+<p>Faker::Education.degree                 #=&gt; &quot;Bachelor of Science in Political Administration&quot;
+                                        #=&gt; &quot;Doctor of Medicine in Marketing Economics&quot;
+                                        #=&gt; &quot;Bachelor of Music in Marketing Development&quot;</p>
+
+<p>Faker::Education.degree_short           #=&gt; &quot;MD in Industrial Arts&quot;
+                                        #=&gt; &quot;DPhil in Social Management&quot;
+                                        #=&gt; &quot;AB in Political Science&quot;</p>
+
+<p>Faker::Education.major                  #=&gt; &quot;Financial Philosophy&quot;
+                                        #=&gt; &quot;Social Arts&quot;
+                                        #=&gt; &quot;Business Accountancy&quot;</p>
+
+<p>Faker::Education.school_name            #=&gt; &quot;Larkfield&quot;
+                                        #=&gt; &quot;Northshire&quot;
+                                        #=&gt; &quot;Lakepoint&quot;
+```</p>
+
+<h2>Faker::Geolocation</h2>
+
+<p>``` ruby
+Faker::Geolocation.lat                  #=&gt; 40.89505
+                                        #=&gt; 41.77117
+                                        #=&gt; 41.022921</p>
+
+<p>Faker::Geolocation.lng                  #=&gt; -115.120716573
+                                        #=&gt; -118.427610513239
+                                        #=&gt; -72.204989
+```</p>
+
+<h2>Faker::Internet</h2>
+
+<p>``` ruby
+Faker::Internet.email                   #=&gt; &quot;dayna@auer.name&quot;
+                                        #=&gt; &quot;joy@nienowbradtke.info&quot;
+                                        #=&gt; &quot;bernhard@wyman.ca&quot;</p>
+
+<p>Faker::Internet.user<em>name               #=&gt; &quot;emory&quot;
+                                        #=&gt; &quot;janelle</em>schamberger&quot;
+                                        #=&gt; &quot;brigitte.dooley&quot;</p>
+
+<p>Faker::Internet.domain_name             #=&gt; &quot;langworth.biz&quot;
+                                        #=&gt; &quot;corkery.info&quot;
+                                        #=&gt; &quot;schroeder.uk&quot;</p>
+
+<p>Faker::Internet.disposable<em>email        #=&gt; &quot;barrett</em>schroeder@spamherelots.com&quot;
+                                        #=&gt; &quot;nicholaus@suremail.info&quot;
+                                        #=&gt; &quot;gladys@safetymail.info&quot;</p>
+
+<p>Faker::Internet.free<em>email              #=&gt; &quot;lemuel@yahoo.com&quot;
+                                        #=&gt; &quot;nickolas.gulgowski@gmail.com&quot;
+                                        #=&gt; &quot;isaac</em>ankunding@gmail.com&quot;</p>
+
+<p>Faker::Internet.domain_word             #=&gt; &quot;purdykutch&quot;
+                                        #=&gt; &quot;sauer&quot;
+                                        #=&gt; &quot;trantowmaggio&quot;</p>
+
+<p>Faker::Internet.domain_suffix           #=&gt; &quot;us&quot;
+                                        #=&gt; &quot;info&quot;
+                                        #=&gt; &quot;biz&quot;
+```</p>
+
+<h2>Faker::Job</h2>
+
+<p><code>ruby
+Faker::Job.title                        #=&gt; &quot;Future Data Assistant&quot;
+                                        #=&gt; &quot;Product Division Technician&quot;
+                                        #=&gt; &quot;Product Research Developer&quot;
+</code></p>
+
+<h2>Faker::Lorem</h2>
+
+<p>``` ruby
+Faker::Lorem.word                       #=&gt; &quot;sint&quot;
+                                        #=&gt; &quot;sit&quot;
+                                        #=&gt; &quot;omnis&quot;</p>
+
+<p>Faker::Lorem.sentence                   #=&gt; &quot;Expedita et aspernatur eum sit ipsam culpa.&quot;
+                                        #=&gt; &quot;Rem sunt voluptatem laborum dolores.&quot;
+                                        #=&gt; &quot;Ad explicabo atque culpa.&quot;</p>
+
+<p>Faker::Lorem.paragraph                  #=&gt; &quot;Quidem deserunt qui atque labore sunt quis laborum. Et iste
+                                        #    laudantium nobis adipisci delectus. Quod vero repudiandae m
+                                        #    agni repellat totam. Id ullam a aperiam et laboriosam. Volup
+                                        #    tas aut perspiciatis o...&quot;
+                                        #=&gt; &quot;Dolor et quae quisquam placeat. Accusantium quidem totam no
+                                        #    n et deleniti accusamus hic. Iure quidem inventore molestiae
+                                        #    harum magni dolor. Deleniti ex a voluptas nihil temporibus.
+                                        #    &quot;
+                                        #=&gt; &quot;Fugiat sapiente vero voluptatum natus assumenda quam beatae
+                                        #    in. Nemo velit incidunt dolor perspiciatis. Ipsum minima oc
+                                        #    caecati est laudantium ducimus libero. Et fugit et adipisci
+                                        #    molestias. Cupiditate ...&quot;</p>
+
+<p>Faker::Lorem.words(4)                   #=&gt; [&quot;repellat&quot;, &quot;quos&quot;, &quot;amet&quot;, &quot;voluptatem&quot;]
+                                        #=&gt; [&quot;porro&quot;, &quot;molestias&quot;, &quot;ut&quot;, &quot;qui&quot;]
+                                        #=&gt; [&quot;blanditiis&quot;, &quot;soluta&quot;, &quot;enim&quot;, &quot;fugit&quot;]</p>
+
+<p>Faker::Lorem.sentence(5)                #=&gt; &quot;Laborum sint voluptate voluptatem rem doloremque et incidun
+                                        #    t itaque.&quot;
+                                        #=&gt; &quot;Autem atque eum laborum alias perspiciatis debitis suscipit
+                                        #    deserunt sint.&quot;
+                                        #=&gt; &quot;Quaerat nam consectetur eum dolor deleniti tempore doloremq
+                                        #    ue et aspernatur.&quot;</p>
+
+<p>Faker::Lorem.sentences(3)               #=&gt; [&quot;Culpa debitis architecto est.&quot;, &quot;Quo et voluptatem distinc
+                                        #    tio repellendus qui cupiditate.&quot;, &quot;Quo repellendus ut eius.&quot;
+                                        #    ]
+                                        #=&gt; [&quot;Quos nihil dolorem quidem maxime.&quot;, &quot;Expedita ab veniam do
+                                        #    lorum at et placeat iure.&quot;, &quot;In perspiciatis cupiditate amet
+                                        #    non saepe consequatur molestias minus.&quot;]
+                                        #=&gt; [&quot;Quasi velit et voluptas est.&quot;, &quot;Dolores ut dolor aut repel
+                                        #    lat fuga minima sed quia.&quot;, &quot;Eum id minus atque ex modi.&quot;]</p>
+
+<p>Faker::Lorem.paragraphs(3)              #=&gt; [&quot;Iusto mollitia sequi nam perspiciatis fuga aut. Modi moles
+                                        #    tiae consectetur architecto et dolorem aut perferendis. Cumq
+                                        #    ue rerum aliquam sapiente. Dolorum quo reiciendis nemo vero.
+                                        #    Quo earum explicabo pariatur.&quot;, &quot;Possimus omnis accusamus f
+                                        #    uga. Harum sint facere sed dolor itaque quia. Ullam optio at
+                                        #    que vel nihil facilis quidem accusantium sint.&quot;, &quot;Itaque per
+                                        #    ferendis saepe pariatur maxime expedita laborum qui. Ea nemo
+                                        #    dolor aut. In sed sit minus itaque sit.&quot;]
+                                        #=&gt; [&quot;Ducimus non quo qui doloremque aperiam aspernatur. Consequ
+                                        #    atur id qui sit occaecati. Incidunt tempora quia et. Esse vo
+                                        #    luptatem debitis similique ab totam sit. Illo neque vel face
+                                        #    re maxime voluptatum non voluptatem.&quot;, &quot;Aut eveniet consequa
+                                        #    tur laudantium veniam qui dolores. Provident pariatur perspi
+                                        #    ciatis id. Eum iste id quasi. Esse nihil quis rerum laudanti
+                                        #    um aliquam molestiae eum tempora.&quot;, &quot;Quia porro sint numquam
+                                        #    qui. Ut sint reiciendis quis pariatur veniam nesciunt optio
+                                        #    . Officia unde fugit distinctio dolorem voluptatem incidunt.
+                                        #    Ex omnis sit et non aut.&quot;]
+                                        #=&gt; [&quot;Dicta consequatur sapiente saepe fugiat ut. Necessitatibus
+                                        #    enim explicabo qui fugiat occaecati expedita quis. Quo iust
+                                        #    o magnam facere nihil earum.&quot;, &quot;In deleniti explicabo veniam
+                                        #    dolorem temporibus enim. Delectus exercitationem ipsum dolo
+                                        #    r modi. Aut quia voluptas velit sint aperiam sed eveniet.&quot;,
+                                        #    &quot;Quo doloribus explicabo ut magnam quasi. Voluptatem debitis
+                                        #    quaerat aperiam. Accusantium quis voluptatem dolorem.&quot;]
+```</p>
+
+<h2>Faker::HipsterIpsum</h2>
+
+<p><code>ruby
+Faker::HipsterIpsum.paragraph           #=&gt; &quot;Wayfarers mustache thundercats pitchfork messenger bag high
+                                        #    life. Beard messenger bag wayfarers squid vinyl letterpress
+                                        #    party iphone jean shorts. Lomo irony before they sold out e
+                                        #    thical wayfarers scene...&quot;
+                                        #=&gt; &quot;Tofu stumptown cliche sartorial vhs letterpress keffiyeh wi
+                                        #    lliamsburg. Whatever jean shorts williamsburg lomo salvia fo
+                                        #    od truck 8-bit. Cosby sweater portland artisan wayfarers vhs
+                                        #    photo booth.&quot;
+                                        #=&gt; &quot;Skateboard fanny pack wes anderson sartorial cred gluten-fr
+                                        #    ee vinyl marfa locavore. Messenger bag master cleanse mlkshk
+                                        #    vegan thundercats beard wes anderson brunch. Helvetica mess
+                                        #    enger bag lo-fi four l...&quot;
+</code></p>
+
+<h2>Faker::HTMLIpsum</h2>
+
+<p>``` ruby
+Faker::HTMLIpsum.body                   #=&gt; &quot;<h1>Exercitationem et</h1><table><thead><tr><th>Eligendi</t
+                                        #    h><th>Vel</th><th>Sed</th><th>At</th></tr></thead><tbody><tr
+                                        #    >&lt;...&quot;
+                                        #=&gt; &quot;<h1>Excepturi sequi</h1><table><thead><tr><th>Quam</th><th>
+                                        #    Eius</th><th>Quibusdam</th><th>Totam</th></tr></thead><tbody
+                                        #    ><tr>...&quot;
+                                        #=&gt; &quot;<h1>Iusto voluptatem</h1><p>Laborum velit ducimus eius. Mol
+                                        #    estiae id vel ipsam a accusantium et ut. Sunt et fugiat qui
+                                        #    sint ab quia. Eum ut molestiae cumque molestiae error volupt
+                                        #    ates. Ipsum molestiae ...&quot;</p>
+
+<p>Faker::HTMLIpsum.table                  #=&gt; &quot;<table><thead><tr><th>Voluptatem</th><th>Porro</th><th>Tene
+                                        #    tur</th><th>Facilis</th></tr></thead><tbody><tr><td>Numquam&lt;
+                                        #    /t...&quot;
+                                        #=&gt; &quot;<table><thead><tr><th>Impedit</th><th>Voluptatem</th><th>Qu
+                                        #    i</th><th>Est</th></tr></thead><tbody><tr><td>Nihil</td>...&quot;
+                                        #=&gt; &quot;<table><thead><tr><th>Iste</th><th>Et</th><th>Sequi</th><th
+                                        #    >Et</th></tr></thead><tbody><tr><td>Blanditiis</td>...&quot;</p>
+
+<p>Faker::HTMLIpsum.fancy_string           #=&gt; &quot;<a href=\"#distinctio\" title=\"Tenetur explicabo\">Velit e
+                                        #    st</a> <code>aperiam reiciendis</code> Consectetur aut hic e
+                                        #    um quisquam. Dolore aut rerum dolor accusantium ab repellend
+                                        #    us magni. Deserunt optio o...&quot;
+                                        #=&gt; &quot;Et vel similique ullam accusantium laboriosam. Sit ut ea to
+                                        #    tam. Iusto praesentium ut molestiae. Voluptatem laudantium a
+                                        #    ut qui adipisci. Est saepe repellendus qui blanditiis volupt
+                                        #    ates sed odit ullam. &lt;...&quot;
+                                        #=&gt; &quot;Neque et omnis ipsam ad culpa maiores inventore. Laborum cu
+                                        #    m est fugit libero repellendus vero. Modi pariatur sunt tene
+                                        #    tur soluta inventore ratione. Iste consequuntur quia omnis n
+                                        #    umquam excepturi quod ...&quot;
+```</p>
+
+<h2>Faker::Name</h2>
+
+<p>``` ruby
+Faker::Name.name                        #=&gt; &quot;Trevion Herman V&quot;
+                                        #=&gt; &quot;Aracely Balistreri&quot;
+                                        #=&gt; &quot;Daphnee Terry Sr.&quot;</p>
+
+<p>Faker::Name.first_name                  #=&gt; &quot;Aliza&quot;
+                                        #=&gt; &quot;Joseph&quot;
+                                        #=&gt; &quot;Orland&quot;</p>
+
+<p>Faker::Name.last_name                   #=&gt; &quot;Hand&quot;
+                                        #=&gt; &quot;Macejkovic&quot;
+                                        #=&gt; &quot;Heller&quot;</p>
+
+<p>Faker::Name.prefix                      #=&gt; &quot;Dr.&quot;
+                                        #=&gt; &quot;Ms.&quot;
+                                        #=&gt; &quot;Mr.&quot;</p>
+
+<p>Faker::Name.suffix                      #=&gt; &quot;I&quot;
+                                        #=&gt; &quot;III&quot;
+                                        #=&gt; &quot;DDS&quot;
+```</p>
+
+<h2>Faker::PhoneNumber</h2>
+
+<p>``` ruby
+Faker::PhoneNumber.phone_number         #=&gt; &quot;335-364-4549 x430&quot;
+                                        #=&gt; &quot;040-278-4021 x753&quot;
+                                        #=&gt; &quot;420.645.4382&quot;</p>
+
+<p>Faker::PhoneNumber.short<em>phone</em>number   #=&gt; &quot;473-412-3192&quot;
+                                        #=&gt; &quot;353-084-1297&quot;
+                                        #=&gt; &quot;080-546-2356&quot;
+```</p>
+
+<h2>Faker::Product</h2>
+
+<p>``` ruby
+Faker::Product.brand                    #=&gt; &quot;Trouffeforge&quot;
+                                        #=&gt; &quot;VIG&quot;
+                                        #=&gt; &quot;NDZ&quot;</p>
+
+<p>Faker::Product.product_name             #=&gt; &quot;Air HD Viewer&quot;
+                                        #=&gt; &quot;HD Kit&quot;
+                                        #=&gt; &quot;Air HD Bridge&quot;</p>
+
+<p>Faker::Product.product                  #=&gt; &quot;Amnix Air HD Tuner&quot;
+                                        #=&gt; &quot;Panapod Audible Filter&quot;
+                                        #=&gt; &quot;Phuffe Disc Receiver&quot;</p>
+
+<p>Faker::Product.model                    #=&gt; &quot;I-422&quot;
+                                        #=&gt; &quot;J89&quot;
+                                        #=&gt; &quot;L6&quot;
+```</p>
+
+<h2>Faker::NameCN</h2>
+
+<p>``` ruby
+Faker::NameCN.name                      #=&gt; &quot;姵书虞&quot;
+                                        #=&gt; &quot;修男嵇&quot;
+                                        #=&gt; &quot;瑜人军&quot;</p>
+
+<p>Faker::NameCN.last_first                #=&gt; &quot;向坚舜&quot;
+                                        #=&gt; &quot;疏骏哲&quot;
+                                        #=&gt; &quot;秘合雪&quot;</p>
+
+<p>Faker::NameCN.first_name                #=&gt; &quot;佑淑&quot;
+                                        #=&gt; &quot;燕谦&quot;
+                                        #=&gt; &quot;重生&quot;</p>
+
+<p>Faker::NameCN.last_name                 #=&gt; &quot;释&quot;
+                                        #=&gt; &quot;巩&quot;
+                                        #=&gt; &quot;麻&quot;
+```</p>
+
+<h2>Faker::NameDE</h2>
+
+<p>``` ruby
+Faker::NameDE.name                      #=&gt; &quot;Noelle Schuster&quot;
+                                        #=&gt; &quot;Bendix Schmid&quot;
+                                        #=&gt; &quot;Azra Neumann&quot;</p>
+
+<p>Faker::NameDE.first_name                #=&gt; &quot;Victoria&quot;
+                                        #=&gt; &quot;Lotta&quot;
+                                        #=&gt; &quot;Mads&quot;</p>
+
+<p>Faker::NameDE.last_name                 #=&gt; &quot;Martin&quot;
+                                        #=&gt; &quot;Klein&quot;
+                                        #=&gt; &quot;Walter&quot;</p>
+
+<p>Faker::NameDE.prefix                    #=&gt; &quot;Frau&quot;
+                                        #=&gt; &quot;Prof.&quot;
+                                        #=&gt; &quot;Prof.&quot;
+```</p>
+
+<h2>Faker::NameJA</h2>
+
+<p>``` ruby
+Faker::NameJA.name                      #=&gt; &quot;飛鳥田部&quot;
+                                        #=&gt; &quot;未杉浦&quot;
+                                        #=&gt; &quot;功本間&quot;</p>
+
+<p>Faker::NameJA.last_first                #=&gt; &quot;青木杏子&quot;
+                                        #=&gt; &quot;棚原大貴&quot;
+                                        #=&gt; &quot;知名翔&quot;</p>
+
+<p>Faker::NameJA.first_name                #=&gt; &quot;巴&quot;
+                                        #=&gt; &quot;浩子&quot;
+                                        #=&gt; &quot;沙耶&quot;</p>
+
+<p>Faker::NameJA.last_name                 #=&gt; &quot;小栗&quot;
+                                        #=&gt; &quot;高江洲&quot;
+                                        #=&gt; &quot;友寄&quot;
+```</p>
+
+<h2>Faker::NameRU</h2>
+
+<p>``` ruby
+Faker::NameRU.name                      #=&gt; &quot;Стелла Карнилина&quot;
+                                        #=&gt; &quot;Евгения Мазовская&quot;
+                                        #=&gt; &quot;Кузьма Ваиренко&quot;</p>
+
+<p>Faker::NameRU.last_name                 #=&gt; &quot;Манишева&quot;
+                                        #=&gt; &quot;Тюлева&quot;
+                                        #=&gt; &quot;Понченко&quot;</p>
+
+<p>Faker::NameRU.first_name                #=&gt; &quot;Артур&quot;
+                                        #=&gt; &quot;Руслана&quot;
+                                        #=&gt; &quot;Зинаида&quot;</p>
+
+<p>Faker::NameRU.patronymic                #=&gt; &quot;Мечеславович&quot;
+                                        #=&gt; &quot;Ионович&quot;
+                                        #=&gt; &quot;Исаевич&quot;</p>
+
+<p>Faker::NameRU.name(:male)               #=&gt; &quot;Слежиков Роман Всеволодович&quot;
+                                        #=&gt; &quot;Осип Мугрузин&quot;
+                                        #=&gt; &quot;Джиджаев Гавриил Леванович&quot;</p>
+
+<p>Faker::NameRU.name(:female)             #=&gt; &quot;Зиядтдинова Полина Людвиговна&quot;
+                                        #=&gt; &quot;Андреева Тереза Арсеновна&quot;
+                                        #=&gt; &quot;Дарина Минхазова&quot;
+```</p>
+
+<h2>Faker::NameSN</h2>
+
+<p>``` ruby
+Faker::NameSN.name_sn                   #=&gt; &quot;mame Djaly Mbodj&quot;
+                                        #=&gt; &quot;Hatab Samy&quot;
+                                        #=&gt; &quot;Niouma Dramé&quot;</p>
+
+<p>Faker::NameSN.name_male                 #=&gt; &quot;serigne Yakou Diagne&quot;
+                                        #=&gt; &quot;serigne Sécouba Diagne&quot;
+                                        #=&gt; &quot;Sihalébé Badji&quot;</p>
+
+<p>Faker::NameSN.name_female               #=&gt; &quot;Thiomba Niang&quot;
+                                        #=&gt; &quot;adjaratou Kiné Panduppy&quot;
+                                        #=&gt; &quot;Nini Gakou&quot;</p>
+
+<p>Faker::NameSN.first<em>name</em>male           #=&gt; &quot;Khoudia&quot;
+                                        #=&gt; &quot;Sanokho&quot;
+                                        #=&gt; &quot;Diomaye&quot;</p>
+
+<p>Faker::NameSN.first<em>name</em>female         #=&gt; &quot;Assa&quot;
+                                        #=&gt; &quot;Sahaba&quot;
+                                        #=&gt; &quot;Manthita&quot;</p>
+
+<p>Faker::NameSN.prefix_male               #=&gt; &quot;eladji&quot;
+                                        #=&gt; &quot;eladji&quot;
+                                        #=&gt; &quot;serigne&quot;</p>
+
+<p>Faker::NameSN.prefix_female             #=&gt; &quot;adjaratou&quot;
+                                        #=&gt; &quot;adja&quot;
+                                        #=&gt; &quot;adja&quot;
+```</p>
+
+<h2>Faker::PhoneNumberAU</h2>
+
+<p><code>ruby
+Faker::PhoneNumberAU.phone_number       #=&gt; &quot;0495 539 191&quot;
+                                        #=&gt; &quot;(05) 6838 2406&quot;
+                                        #=&gt; &quot;0496 013 652&quot;
+</code></p>
+
+<h2>Faker::PhoneNumberSN</h2>
+
+<p><code>ruby
+Faker::PhoneNumberSN.phone_number       #=&gt; &quot;77-356-93-09&quot;
+                                        #=&gt; &quot;33-891-67-75&quot;
+                                        #=&gt; &quot;33-886-02-02&quot;
+</code></p>
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+  <script src="http://cachedcommons.org/cache/prettify/1.0.0/javascripts/prettify-min.js"></script>
+  <script>$("pre").addClass("prettyprint");</script>
+  <script>prettyPrint();</script>
+</body>
+</html>
